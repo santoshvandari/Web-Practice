@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.image{
+    text-align: right;
+    display: none;
+}
+.image img{
+    width: 100%;
+    height: 800px;
+}
+.image p{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    background: #00000080;
+}
+.btn{
+    position: absolute;
+    background-color: #1304047a;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    top: 40%;
+    margin: 10px;
+    color: #fff;
+    cursor:pointer;
+}
+#next{
+    right: 0;
+}

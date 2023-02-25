@@ -1,0 +1,69 @@
+<!-- HTML & CSS Code to Design Instagram Logo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Logo</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-color: #091836;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .insta {
+        width: 170px;
+        height: 170px;
+        background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+        border-radius: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border: 10px solid #fff;
+        border-radius: 34px;
+        position: relative;
+    }
+    .inner:after {
+        content: '';
+        background: #fff;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .innerest {
+        width: 40px;
+        height: 40px;
+        border: 10px solid #fff;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="insta">
+            <div class="inner">
+                <div class="innerest">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

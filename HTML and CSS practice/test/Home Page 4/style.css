@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar Start  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+    height: 80px;
+    width: 100%;
+    position:absolute;
+}
+nav .logo{
+    color: #77a5ff;
+    margin-left: 20px;
+    letter-spacing: -2px;
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    margin-right: 50px ;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all .5s linear;
+}
+/* Navigation Bar Ends  */
+/* First Section Start  */
+main .first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+    overflow: hidden;
+    /* margin-top: -50px; */
+    z-index: -1;
+}
+.first1{
+    width: 45%;
+    margin-left: 4%;
+}
+.first1 h3{
+    font-size: 34px;
+    width: 70%;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.first1 div{
+content: " ";
+    width: 15%;
+    height: 3px;
+    background-color: #77a5ff;
+margin-bottom: 20px;
+}
+.first1 p{
+    font-size: 18px;
+    margin: 20px 0px;
+    text-align: justify;
+}
+.first2{
+    background: url('img/home.jpg') no-repeat center center/cover;
+    opacity: .85;
+    width: 45%; 
+    height: 100%;
+    z-index: -1; 
+}
+/* First Section Ends */
+/* Section Section Starts */
+.second{
+    background: #eee;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.second .size{
+    width: 70%;
+}
+.second .option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    position: relative;
+}
+.option p{
+    margin: 0px 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.option p:last-child{
+    background: #76a3ff;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 10px;
+    outline-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.option::after{
+    content: " ";
+    width: 100%;
+    height: 3px;
+    background: #cecece;
+    position: absolute;
+    bottom: -8px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+}
+.content-left{
+    width: 50%;
+}
+.content-left h3{
+    padding: 20px 0px;
+    font-size: 28px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+}
+.content-left h3::after{
+    content: " ";
+    width: 15%;
+    height: 3px;
+    background-color:#77a5ff;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+.content-left p{
+    padding: 25px 0px;
+    line-height: 120%;
+    font-size: 17px;
+    text-align: justify;
+}
+.content-right{
+    content: " ";
+    background: url(img/home.jpg) no-repeat center center/cover;
+    opacity: .8;
+    height: 90%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 3px 2px 3px black;
+
+}
+/* Second Section Ends Here */
+/* Third Section Start From Here */
+.third{
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+.third h2{
+    padding: 20px 0px;
+    font-size: 36px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.card{
+    background: #eee;
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #666666;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    opacity: .9;
+    box-shadow: 2px 2px 10px #666666;
+}
+.card h6{
+    font-size: 22px;
+    margin: 10px 0px;
+}
+.card p{
+    line-height: 140%;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+.card button{
+    background:transparent;
+    font-size: 18px;
+    padding: 5px 20px;
+    margin: 10px 0px;
+    border: 2px solid #77a5ff;
+    border-radius: 7px;
+    color: #76afff;
+    cursor: pointer;
+}
+.card button:hover{
+    color: #fff;
+    background: #77a5ff;
+    transition: all .2s linear;
+}
+/*Third Section Ends Here*/
+/* Utility Classes */
+.btn{
+    background: #76a3ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    outline-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}

@@ -1,0 +1,4 @@
+CoWork : #77a5ff
+btn color:   #76a3ff
+workspaces color: #eeeeee
+line: #cecece

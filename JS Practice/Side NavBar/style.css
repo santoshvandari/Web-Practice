@@ -1,0 +1,56 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.icons img{
+    padding: 20px;
+    height: 80px;
+    float:right;
+    cursor: pointer;
+}
+.main{
+    transition: all .3s linear;
+    overflow: hidden;
+    width: 0px;
+    background: whitesmoke;
+    height: 100vh;
+}
+.main-show{
+    padding: 10px;
+    width: 500px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo .img{
+    height: 50px;
+    border-radius: 50%;
+}
+.logo .xicon{
+    height: 30px;
+    cursor: pointer;
+}
+.menu{
+    margin-top: 50px;
+}
+.menu ul li{
+    margin: 5px 0;
+}
+ul li a{
+    transition: all .3s linear;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: cursive;
+    color: #454545;
+}
+ul li a:hover{
+    background: #d949496b;
+    padding-left: 30px;
+}

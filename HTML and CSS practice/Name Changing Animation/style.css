@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(#141e30, #243b55);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif, "Times New Roman", Times, serif;
+}
+h1 {
+  position: relative;
+  font-size: 5rem;
+  background-image: linear-gradient(to right, #fff 68%, #c3f5ff 32%);
+  padding: 15px;
+  border-radius: 10px;
+}
+li{
+  list-style-type: none;
+  cursor: pointer;
+}
+li::before{
+  content: '';
+  /* border-bottom:  5px solid #36d1dc; */
+  position: absolute;
+  top: 90px;
+  background-image: linear-gradient(#0cd492, #940808c9);
+  height: 4px;
+  width: 0px;
+  transition: all 0.5s linear;
+}
+li:hover::before{
+  width: 730px;
+}
+@keyframes border {
+  0%{
+    border-width: 5px;
+    transition: all;
+  }
+  100%{
+    transition: all;
+    border-width: 20px;
+  }
+}
+h3 {
+  display: block;
+  padding: 5px;
+  background-image: linear-gradient(#36d1dc, #5b86e5);
+  font-size: 40px;
+  border-radius: 10px;
+}
+h2::after {
+  background-image: linear-gradient(#2193b0, #6dd5ed);
+  content: "";
+  display: inline-block;
+  animation: name 20s  0.01s infinite alternate;
+  padding: 15px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+@keyframes name {
+  0% {
+    content: "sandakpur";
+  }
+  8% {
+    content: "Shree Antu";
+  }
+  16%{
+    content: 'Ilam';
+  }
+  24% {
+    content: "Kanyam";
+  }
+  32%{
+    content: "Vadetar";
+  }
+  40% {
+    content: "Janakpur";
+  }
+  48% {
+    content: "Lumbini";
+  }
+  56% {
+    content: "Pokhara";
+  }
+  64% {
+    content: "Pasupathinath";
+  }
+  72% {
+    content: "Chandragiri";
+  }
+  79% {
+    content: "Dipyal";
+  }
+  86% {
+    content: "Nawalparasi";
+  }
+  94% {
+    content: "Gorkha";
+  }
+  100% {
+    content: "If you are my Friends, Then My House";
+  }
+}
+

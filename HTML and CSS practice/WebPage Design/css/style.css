@@ -1,0 +1,210 @@
+/* Universal Operator Using */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Initilizing the rem Value in HTML */
+html{
+    font-size: 10px;
+}
+body{
+  transition: all .2s linear;
+}
+/* Navigation Section */
+nav {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+}
+nav img {
+  width: 5rem;
+  margin: 3rem;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 2.8rem;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.4rem;
+  padding: .5rem;
+  border-radius: 1rem;
+}
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+/* Main Section Start  */
+/* Home Section Stat  */
+#home {
+  height: 65rem;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.09) 50%,
+      rgba(255, 255, 255, 0.09) 50%
+    ),
+    url("../img/bg/bg1.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#home div {
+  width: 60%;
+  margin: 0px 1rem;
+  padding: 2rem;
+}
+#home div h1 {
+  font-size: 5.8rem;
+  color: #fff;
+  margin: .5rem;
+  padding: .5rem;
+}
+#home div p {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 1rem;
+  padding: .5rem;
+}
+/* Services Section Start  */
+#services {
+  margin: .5rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+}
+.wrapper div {
+  padding: 3rem;
+  border: .2rem solid #a52a2a;
+  margin: 1rem 3rem;
+  border-radius: 2rem;
+  background-color: #f2f2f2;
+}
+.wrapper div img {
+  height: 20rem;
+}
+.wrapper div h3 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+.wrapper div p {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: .5rem;
+  margin: 1rem 0;
+}
+
+/* Our Clients Section Start  */
+#clients {
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.7) 50%,
+      rgba(255, 255, 255, 0.7) 50%
+    ),
+    url("../img/bg/bg.jpg");
+  height: 30rem;
+  margin: 2rem 0px 0px;
+  text-align: center;
+}
+#clients img {
+  height: 16rem;
+  margin: 1rem;
+}
+
+/* Contact Us Section Start  */
+#contact{
+    height:56rem;
+    background: 
+    linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.3) 50%
+      ),
+      url("../img/bg/contact.jpg") no-repeat center center/cover;
+      margin: -1rem 0px 0px;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1rem;
+
+}
+#contact form label{
+margin: .5rem 0px 0px;
+font-size: 2rem;
+}
+#contact form input{
+  height: 4rem;
+  outline: none;
+  padding: .5rem;
+  border-radius: .8rem;
+  font-size: 1.8rem;
+}
+#contact form input::placeholder{
+  font-size: 1.8rem;
+}
+#contact form textarea{
+  height: 20rem;
+  outline: none;
+  padding: .5rem;
+  border-radius: .8rem;
+  font-size: 1.8rem;
+}
+
+
+
+/* footer section start  */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+footer p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+/* Utility Classes */
+
+.btn {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 1rem;
+  padding: .5rem 1.5rem;
+  background: #a52a2a;
+  border: .2rem solid #fff;
+  border-radius: .8rem;
+  outline: none;
+  cursor: pointer;
+}
+.primary {
+  padding: 2rem;
+  font-size: 6rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+.primary2 {
+  font-size: 6rem;
+  margin: 1rem;
+  text-align: center;
+}

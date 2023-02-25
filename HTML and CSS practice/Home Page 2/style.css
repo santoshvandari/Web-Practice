@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("img/bg.jpg") no-repeat;
+  background-size: cover;
+}
+header {
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+header .logo {
+  width: 20%;
+  text-align: center;
+  
+}
+header .logo h1 {
+  font-size: 40px;
+  text-shadow: 3px 3px 5px #00b894;
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+nav a:first-child {
+  color: #00b894;
+}
+nav a:hover {
+  color: #00b894;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #00b894;
+  transition: all 0.3s ease-in-out;
+}
+nav a:hover:before {
+  content: "";
+  width: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 5px #000;
+}
+main h3 {
+  font-size: 40px;
+  margin-bottom: 25px;
+
+}
+main h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 10px 0px;
+  text-shadow: 5px 5px 5px #000;
+}
+main p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+main section button {
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 5px;
+  outline: none;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 1px 1px 5px #000;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+main section .btn1 {
+  color: #000;
+  background: #fff;
+}
+main section .btn2 {
+  color: #fff;
+  background: #00b894;
+}
+.btn1:hover {
+  color: #fff;
+  background: #00b894;
+}
+.btn2:hover {
+  color: #000;
+  background: #fff;
+}
+main section h1 span:after {
+  content: "";
+  color: #00b894;
+  animation: namechange 15s linear 0.2s infinite alternate;
+}
+@keyframes namechange {
+    0%{
+        content: "Shree Antu";
+            }
+  10% {
+    content: "Sandakpur";
+  }
+  20% {
+    content: "Janakpur";
+  }
+  30% {
+    content: "Lumbini";
+  }
+  40% {
+    content: "Pokhara";
+  }
+  50% {
+    content: "Mananag";
+  }
+  60% {
+    content: "Mustang";
+  }
+  70% {
+    content: "Butwal";
+  }
+  80% {
+    content: "Badimalika";
+  }
+  90% {
+    content: "Nawalparasi";
+  }
+  100%{
+    content: "Chitwan";
+  }
+}

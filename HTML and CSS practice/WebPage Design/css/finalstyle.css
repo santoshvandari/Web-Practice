@@ -1,0 +1,207 @@
+/* Universal Operator Using */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Initilizing the rem Value in HTML */
+/* html{
+    font-size: 10px;
+} */
+/* Navigation Section */
+nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+}
+nav img {
+  width: 50px;
+  margin: 30px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 28px;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 10px;
+}
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+/* Main Section Start  */
+/* Home Section Stat  */
+#home {
+  height: 650px;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.09) 50%,
+      rgba(255, 255, 255, 0.09) 50%
+    ),
+    url("../img/bg/bg1.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#home div {
+  width: 60%;
+  margin: 0px 10px;
+  padding: 20px;
+}
+#home div h1 {
+  font-size: 58px;
+  color: #fff;
+  margin: 5px;
+  padding: 5px;
+}
+#home div p {
+  font-size: 25px;
+  color: #fff;
+  margin: 10px;
+  padding: 5px;
+}
+/* Services Section Start  */
+#services {
+  margin: 5px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
+}
+.wrapper div {
+  padding: 30px;
+  border: 2px solid #a52a2a;
+  margin: 10px 30px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+}
+.wrapper div img {
+  height: 200px;
+}
+.wrapper div h3 {
+  font-size: 30px;
+  margin: 10px;
+}
+.wrapper div p {
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+/* Our Clients Section Start  */
+#clients {
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.7) 50%,
+      rgba(255, 255, 255, 0.7) 50%
+    ),
+    url("../img/bg/bg.jpg");
+  height: 300px;
+  margin: 20px 0px 0px;
+  text-align: center;
+}
+#clients img {
+  height: 160px;
+  margin: 10px;
+}
+
+/* Contact Us Section Start  */
+#contact{
+    height:560px;
+    background: 
+    linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.3) 50%
+      ),
+      url("../img/bg/contact.jpg") no-repeat center center/cover;
+      margin: -10px 0px 0px;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 10px;
+
+}
+#contact form label{
+margin: 5px 0px 0px;
+font-size: 20px;
+}
+#contact form input{
+  height: 40px;
+  outline: none;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+#contact form input::placeholder{
+  font-size: 18px;
+}
+#contact form textarea{
+  height: 200px;
+  outline: none;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+
+
+/* footer section start  */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+footer p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* Utility Classes */
+
+.btn {
+  font-size: 25px;
+  color: #fff;
+  margin: 10px;
+  padding: 5px 15px;
+  background: #a52a2a;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.primary {
+  padding: 20px;
+  font-size: 60px;
+  margin: 15px;
+  text-align: center;
+}
+.primary2 {
+  font-size: 60px;
+  margin: 10px;
+  text-align: center;
+}

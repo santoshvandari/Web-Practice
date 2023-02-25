@@ -1,0 +1,8 @@
+main background overlay color: #373a3f
+menu different color: #1464a3
+main buttton color: #4c8df3
+testimonials overlay color: #444547
+video overlay color:   #484745
+butttom menu color:  #373737
+footer background color:  #222222
+footer copyright color: #717370

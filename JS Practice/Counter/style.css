@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.container{
+    padding: 30px;
+    text-align: center;
+}
+.container h3{
+    font-size: 50px;
+    font-weight: 600;
+    padding: 20px;
+}
+.container span{
+    padding: 20px;
+    font-size: 100px;
+    font-weight: 500;
+}
+.btn button{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    background: grey;
+}
+.btn .minus{
+    background: #da3939;
+}
+.btn .plus{
+    background-color: green;
+}

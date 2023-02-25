@@ -1,0 +1,63 @@
+@media screen and (max-width:1170px){
+    html{
+        font-size: 8px;
+    }
+    #contact form{
+        width: 80%;
+}
+#contact form label{
+    font-size: 20px;
+   }
+}
+@media screen and (max-width:940px){
+    html{
+        font-size: 6.5px;
+    }
+    #contact form{
+        width: 80%;
+}
+#contact form label{
+    font-size: 20px;
+   }
+}
+@media screen and (max-width:790px){
+    html{
+        font-size: 8px;
+    }
+    nav{
+        flex-direction: column;
+        height: 110px;
+    }
+    nav img{
+        margin: 10px 0px 0px;
+        width: 50px;
+    }
+    nav ul li{
+        margin: 8px;
+    }
+    nav ul li a{
+        font-size: 24px;
+    }
+    #home div{
+        width: 80%;
+    }
+    #home div p{
+        font-size: 20px;
+    }
+    #services .wrapper{
+        flex-direction: column;
+    }
+    .wrapper div{
+        margin: 5px 10px;
+    }
+    #clients img{
+       height:80px ;
+       margin: 5px;
+    }
+    #contact form{
+            width: 95%;
+    }
+    #contact form label{
+         font-size: 20px;
+        }
+}

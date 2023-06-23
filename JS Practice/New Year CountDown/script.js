@@ -1,4 +1,4 @@
-const newYear = '1 January 2023 0:0:0';
+const newYear = '1 January 2024 0:0:0';
 const newYearDate = new Date(newYear);
 setInterval(() => {
     const currentDate = new Date();

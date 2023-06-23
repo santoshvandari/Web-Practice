@@ -1,0 +1,17 @@
+@mixin logo{
+    display: flex;
+    align-items: center;
+    img{
+        height: 6rem;
+    }
+    h1{
+        color:$logoColor;
+        font-size: 5rem;
+        padding: 1rem;
+    }
+}
+@mixin flex{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+}

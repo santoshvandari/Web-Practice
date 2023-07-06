@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1f2833;
+}
+h1{
+    color: #66fcf1;
+    font-size: 58px;
+    text-align: center;
+}
+#flipdown{
+    width: 100%;
+}

@@ -1,0 +1,41 @@
+@media screen and (max-width:800px) {
+    nav .logo h1{
+        font-size: 40px;
+    }
+    nav ul{
+        position: absolute;
+        flex-direction: column;
+        width: 200px;
+        right: -210px;
+        top: 0;
+        float: right;
+        background: #ff004f;
+        height: 100vh;
+        padding: 50px 0; 
+        text-align: center;
+        transition: right 0.4s;
+    }
+    nav .option{
+        display: block;
+    }
+    #close{
+        display: block;
+    }
+    #hero .content h5{
+        font-size: 20px;
+    }
+    #hero .content h3{
+        font-size: 40px;
+    }
+    .heading{
+        font-size: 40px;
+        text-align: center;
+    }
+    .contact-info,.contact-form{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    footer{
+        font-size: 16px;
+    }
+}

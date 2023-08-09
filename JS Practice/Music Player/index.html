@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Collection || Play Song</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1>Spotify</h1></div>
+            <ul>
+                <div>
+                    <li>Home</li>
+                    <li>About</li>
+                </div>
+                <div>
+                    <li>Login/SignUp</li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="songContainer">
+            <div class="songItemsWrapper">
+                <div class="SongItemCollection">
+                    <h1>Song Collection</h1>
+                    <!-- <div class="songItem">
+                        <img id="cover" src="covers/1.jpg">
+                        <p id="songName">Chandni Sachet Tandon</p>
+                        <i class="bi bi-play-btn"></i>
+                    </div>                      -->
+                </div>
+            </div>
+        </section>
+        <section class="timeline">
+            <div class="timelineBar">
+                <input type="range" id="progressBar" min="0" max="100" value="0">
+            </div>
+            <div class="option">
+                <i id="previous" class="bi bi-skip-backward-btn"></i>
+                <i id="playpause" class="bi bi-play-btn"></i>
+                <i id="next" class="bi bi-skip-forward-btn"></i>
+            </div>
+            <div class="gif">
+                <img src="img/gif.gif">
+                <p id="CurrentSongName"></p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

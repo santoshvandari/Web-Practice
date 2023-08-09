@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightgoldenrodyellow;
+}
+header nav{
+    height: 40px;
+    background: #0f0f0f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.logo h1{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.836);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 90%;
+}
+nav ul div{
+    display: flex;
+}
+nav ul div li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 0 20px;
+}
+nav ul div li:hover{
+    color: aquamarine;
+}
+.songContainer{
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songItemsWrapper{
+    width: 70%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('img/bg.jpg') center center/cover ;
+    height: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.songItemsWrapper h1{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 400;
+
+}
+.songItem{
+    /* display: none; */
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin-top: 10px;
+
+}
+.songItem img{
+    width: 35px;
+    border-radius: 50%;
+}
+#songName{
+    font-weight: bold;
+}
+.songItem i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timeline{
+    height: 100px;
+    background: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.timelineBar{
+    width: 80vw;
+
+}
+.timelineBar input{
+    width: 100%;
+    cursor: pointer;
+}
+.option{
+    color: #fff;
+    font-size: 30px;
+}
+.option i{
+    padding: 0 5px;
+    cursor: pointer;
+}
+.option i:active{
+    color: #cac5c5a4;
+}
+.gif{
+    position: absolute;
+    color: #fff;
+    left:10.2vw;
+    top: 45%;
+    display:flex;
+    gap: 10px;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.gif img{
+    width: 50px;
+    /* opacity: 0; */
+}

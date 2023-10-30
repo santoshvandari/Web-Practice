@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.game{
+    display: flex;
+    gap: 50px;
+}

@@ -39,6 +39,9 @@ main {
     border: 2px solid #000;
 }
 
+.box:hover{
+    
+}
 .bt-0 {
     border-top: 0px;
 }
@@ -57,6 +60,9 @@ main {
 .gamestatus{
     font-size: 20px;
 }
+.gameinfo{
+    width: 300px;
+}
 .gameinfo button{
     padding: 10px;
     font-size: 18px;
@@ -65,4 +71,8 @@ main {
     border: none;
     background: rgb(34, 58, 58);
     color: #f7f5f5;
+}
+.gameinfo img{
+    transition: width 1s ease-in-out;
+    width: 0px;
 }

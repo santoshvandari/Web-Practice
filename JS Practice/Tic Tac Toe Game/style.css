@@ -19,3 +19,7 @@ main{
     display: flex;
     gap: 50px;
 }
+.gameboard{
+    display: grid;
+    
+}

@@ -22,6 +22,13 @@ let wincase=[
 
 
 //Changing Turn of Player
-const ChangePlayer=()=>playerTurn==='X'?'0':'X';
+const ChangePlayer=()=>{
+    playerTurn=(playerTurn==='X'?'0':'X');
+};
 
-setInterval()
+
+setInterval(function(){
+    ChangePlayer();
+    console.log(playerTurn)
+}
+,1000)

@@ -3,7 +3,10 @@ let isGameOver=False;
 let playerTurn='X';
 
 
-//Music Vair
+//Music Varibles Declearation
+let musicplaying= new Audio('music.mp3');
+let musicplaying= new Audio('music.mp3');
+let musicplaying= new Audio('music.mp3');
 //Wining Combination
 let wincase=[
     [0,1,2],

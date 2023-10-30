@@ -24,12 +24,12 @@ main {
 }
 
 .gameboard {
-    background: red;
+    /* background: red; */
     display: grid;
     grid-template: repeat(3, 10vw) / repeat(3, 10vw);
 }
 
-.gameboard .box {
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@ main {
 }
 
 .bt-0 {
-    border-top: 0;
+    border-top: 0px;
 }
 
 .br-0 {

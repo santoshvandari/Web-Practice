@@ -5,8 +5,8 @@ let playerTurn='X';
 
 //Music Varibles Declearation
 let musicplaying= new Audio('music.mp3');
-let musicplaying= new Audio('music.mp3');
-let musicplaying= new Audio('music.mp3');
+let gameover= new Audio('gameover.mp3');
+let clicksound= new Audio('ting.mp3');
 //Wining Combination
 let wincase=[
     [0,1,2],

@@ -1,38 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
-h1{
-    text-align: center;
-    font-size: 40px;
-    text-decoration: underline;
-    margin-top: 10px;
+h1 {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-top: 10px;
 }
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
-.game{
-    display: flex;
-    gap: 50px;
+.game {
+  display: flex;
+  gap: 50px;
 }
-.gameboard{
-    background: red;
-    display: grid;
-    grid-template: repeat(3, 10vw) / repeat(3, 10vw);
+.gameboard {
+  background: red;
+  display: grid;
+  grid-template: repeat(3, 10vw) / repeat(3, 10vw);
 }
-.gameboard .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    font-weight: bold;
-    padding: 30px;
-    border: 2px solid #000;
+.gameboard .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: bold;
+  padding: 30px;
+  border: 2px solid #000;
 }
-.bt-0{
-    border-top: 0;
+.bt-0 {
+  border-top: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bt-0 {
+  border-top: 0;
 }

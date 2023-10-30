@@ -54,3 +54,15 @@ main {
 .bb-0 {
     border-bottom: 0;
 }
+.gamestatus{
+    font-size: 20px;
+}
+.gameinfo button{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background: rgb(34, 58, 58);
+    color: #f7f5f5;
+}

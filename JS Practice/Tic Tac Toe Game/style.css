@@ -41,7 +41,10 @@ main {
 }
 
 .box:hover{
-    background-color: rgb(226, 226, 205);
+    background: rgb(226, 226, 205);
+}
+.box:active{
+    background: rgba(233, 233, 216, 0.555)
 }
 .bt-0 {
     border-top: 0px;
@@ -72,6 +75,11 @@ main {
     border: none;
     background: rgb(34, 58, 58);
     color: #f7f5f5;
+    cursor: pointer;
+}
+.gameinfo button:active{
+    background: transparent;
+    color: #000;
 }
 .gameinfo img{
     transition: width 1s ease-in-out;

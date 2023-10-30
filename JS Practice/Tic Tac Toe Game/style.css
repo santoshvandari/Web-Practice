@@ -20,6 +20,12 @@ main{
     gap: 50px;
 }
 .gameboard{
+    background: red;
     display: grid;
-    
+    grid-template: repeat(3, 50px) / repeat(3, 50px);
+}
+.gameboard .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

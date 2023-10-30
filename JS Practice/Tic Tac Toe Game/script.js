@@ -1,5 +1,6 @@
+console.log("hello WOrld")
 // Declearing All the Variables
-let isGameOver=False;
+let isGameOver=false;
 let playerTurn='X';
 
 
@@ -21,4 +22,6 @@ let wincase=[
 
 
 //Changing Turn of Player
-// const ChangePlayer=()=>
+const ChangePlayer=()=>playerTurn==='X'?'0':'X';
+
+setInterval()

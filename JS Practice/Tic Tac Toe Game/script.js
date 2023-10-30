@@ -1,3 +1,9 @@
+// Declearing All the Variables
+let isGameOver=False;
+let playerTurn='X';
+
+
+//Music Vair
 //Wining Combination
 let wincase=[
     [0,1,2],
@@ -12,3 +18,4 @@ let wincase=[
 
 
 //Changing Turn of Player
+const ChangePlayer=()=> 

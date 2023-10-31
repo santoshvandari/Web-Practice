@@ -7,6 +7,7 @@ let playerTurn='X';
 let BoxCollectiion = document.getElementsByClassName('box');
 let TextBoxCollection = document.getElementsByClassName('text');
 let GameStatus= document.getElementsByClassName('gamestatus')[0];
+let lineEl=document.getElementsByClassName('line')[0]
 
 //Music Varibles Declearation
 const musicplaying= new Audio('music.mp3');
@@ -39,6 +40,7 @@ let GameWonLogic=()=>{
         if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent && TextBoxCollection[e[0]].textContent !=''){
             isGameOver=true;
             // console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
+            lineEl.style.transform=`translate(0px,0px) rotate(0deg)`;
             GameStatus.textContent=`${TextBoxCollection[e[0]].textContent} Won the Game!!!`;
             document.getElementsByTagName('img')[0].style.width='200px';
             gameover.play();

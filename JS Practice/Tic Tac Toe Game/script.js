@@ -35,10 +35,10 @@ const ChangePlayer=()=>{
 };
 //checking the GameisDraw or Not
 let CheckDraw=()=>{
-    for (const element of TextBoxCollection) {
+    for (const element of TextBoxCollection) 
         if(element.textContent!='')
             isDraw=true;
-    }
+    
 }
 //Implement Game Win Logic
 let GameWonLogic=()=>{

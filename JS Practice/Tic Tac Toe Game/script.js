@@ -37,12 +37,18 @@ const ChangePlayer=()=>{
 };
 
 //Implement Game Win Logic
-wincase.forEach(e=>{
-    if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent && TextBoxCollection[e[0]].textContent !=''){
-        console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
-    }
-})
+let GameWonLogic=()=>{
+    
+    wincase.forEach(e=>{
+        if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent && TextBoxCollection[e[0]].textContent !=''){
+            isGameOver==true;
+            // console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
+            GameStatus.textContent=`${playerTurn} Won the Game!!!`;
 
+        }
+    })
+    
+}
 
 
 
@@ -53,6 +59,7 @@ Array.from(BoxCollectiion).forEach(element=>{
             element.getElementsByClassName('text')[0].innerHTML=playerTurn;
             clicksound.play();
             ChangePlayer();
+            GameWonLogic();
         }else{
             // alert("This Box is Already Filled")
         }

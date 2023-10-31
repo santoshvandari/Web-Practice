@@ -6,6 +6,7 @@ let playerTurn='X';
 //Selecting the Elements
 let BoxCollectiion = document.getElementsByClassName('box');
 let TextBoxCollection = document.getElementById('text');
+let GameStatus= document.getElementsByClassName('gamestatus')[0];
 
 
 
@@ -29,6 +30,9 @@ let wincase=[
 //Changing Turn of Player
 const ChangePlayer=()=>{
     playerTurn=(playerTurn==='X'?'0':'X');
+    if(!isGameOver){
+        GameStatus.textContent=`Turn For ${playerTurn}`;
+    }
 };
 
 

@@ -86,6 +86,7 @@ main {
     background: rgb(34, 58, 58);
     color: #f7f5f5;
     cursor: pointer;
+    margin-top: 5px;
 }
 .gameinfo button:active{
     background: transparent;

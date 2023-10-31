@@ -35,9 +35,12 @@ const ChangePlayer=()=>{
 };
 //checking the GameisDraw or Not
 let CheckDraw=()=>{
+    let count=0;
     for (const element of TextBoxCollection) 
         if(element.textContent!='')
-            isDraw=true;
+            count++;
+    if(count==9)
+        isDraw=true;
 }
 //Implement Game Win Logic
 let GameWonLogic=()=>{
@@ -59,10 +62,14 @@ Array.from(BoxCollectiion).forEach(element=>{
         if(element.textContent=="" && isGameOver===false && isDraw==false){
             element.getElementsByClassName('text')[0].innerHTML=playerTurn;
             clicksound.play();
-            ChangePlayer();
-            GameWonLogic();
-        }else{
+            setTimeout(() => {
+                ChangePlayer();
+                GameWonLogic();
+            }, 100);
+        }else if(element.textContent!=""){
             alert("This Box is Already Filled")
+        }else{
+            alert("Game Over!!!")
         }
     })
 })
@@ -75,6 +82,15 @@ document.getElementById('reset').addEventListener('click',()=>{
             isGameOver=false;
             isDraw=false;
             lineEl.style.width=`0px`;
+            musicplaying.currentTime=0;
         })
     }
 });
+
+document.getElementById('music').addEventListener('click',function(){
+    if(musicplaying.pause()){
+        musicplaying.play();
+    }else{
+        musicplaying.paused();
+    }
+})

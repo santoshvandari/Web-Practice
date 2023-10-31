@@ -3,6 +3,11 @@ console.log("hello WOrld")
 let isGameOver=false;
 let playerTurn='X';
 
+//Selecting the Elements
+let BoxCollectiion = document.getElementsByClassName('box');
+let TextBoxCollection = document.getElementById('text');
+
+
 
 //Music Varibles Declearation
 const musicplaying= new Audio('music.mp3');
@@ -35,16 +40,29 @@ const ChangePlayer=()=>{
 
 
 //Adding the Event Listener in the Box
-let BoxCollectiion = document.getElementsByClassName('box');
 Array.from(BoxCollectiion).forEach(element=>{
-    let boxtext=element.getElementsByClassName('text')[0];
     element.addEventListener('click',()=>{
         if(element.textContent==""){
-            boxtext.textContent=playerTurn;
-            clicksound.play();
+            console.log(element.innerHTML)
+            console.log(element.getElementsByClassName('text'))
+            console.log("This Box is Empty")
+            // boxtext.textContent=playerTurn;
+            element.getElementsByClassName('text')[0].innerHTML=playerTurn;
+
+            // clicksound.play();
             ChangePlayer();
         }else{
             console.log("This Box is Already Filled")
         }
     })
 })
+
+
+
+//Adding the Event Listener in the Reset Button
+document.getElementById('reset').addEventListener('click',()=>{
+    Array.from(BoxCollectiion).forEach(element=>{
+        // element.textContent="";
+        element.getElementsByClassName("text").textContent="";
+    })
+});

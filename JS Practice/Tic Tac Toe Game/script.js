@@ -35,11 +35,6 @@ const ChangePlayer=()=>{
     }
 };
 
-
-
-
-
-
 //Implement Game Win Logic
 
 
@@ -53,7 +48,7 @@ Array.from(BoxCollectiion).forEach(element=>{
             clicksound.play();
             ChangePlayer();
         }else{
-            alert("This Box is Already Filled")
+            // alert("This Box is Already Filled")
         }
     })
 })

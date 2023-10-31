@@ -43,7 +43,7 @@ let GameWonLogic=()=>{
         if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent && TextBoxCollection[e[0]].textContent !=''){
             isGameOver==true;
             // console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
-            GameStatus.textContent=`${playerTurn} Won the Game!!!`;
+            GameStatus.textContent=`${TextBoxCollection[e[0]].textContent} Won the Game!!!`;
             document.getElementsByTagName('img')[0].style.width='200px';
             gameover.play();
 

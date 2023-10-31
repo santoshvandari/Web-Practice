@@ -62,7 +62,6 @@ Array.from(BoxCollectiion).forEach(element=>{
 //Adding the Event Listener in the Reset Button
 document.getElementById('reset').addEventListener('click',()=>{
     Array.from(BoxCollectiion).forEach(element=>{
-        // element.textContent="";
-        element.getElementsByClassName("text").textContent="";
+        element.getElementsByClassName("text")[0].textContent="";
     })
 });

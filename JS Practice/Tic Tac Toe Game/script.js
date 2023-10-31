@@ -40,8 +40,6 @@ let CheckDraw=()=>{
             isDraw=true;
     }
 }
-
-
 //Implement Game Win Logic
 let GameWonLogic=()=>{
     wincase.forEach(e=>{

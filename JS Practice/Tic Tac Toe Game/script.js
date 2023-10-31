@@ -38,6 +38,8 @@ const ChangePlayer=()=>{
 
 
 
+
+
 //Implement Game Win Logic
 
 
@@ -46,7 +48,7 @@ const ChangePlayer=()=>{
 //Adding the Event Listener in the Box
 Array.from(BoxCollectiion).forEach(element=>{
     element.addEventListener('click',()=>{
-        if(element.textContent==""){
+        if(element.textContent=="" && isGameOver===false){
             console.log(element.innerHTML)
             console.log(element.getElementsByClassName('text'))
             console.log("This Box is Empty")

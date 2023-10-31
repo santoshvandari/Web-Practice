@@ -37,9 +37,10 @@ const ChangePlayer=()=>{
 };
 
 //checking the GameisDraw or Not
-let Check
+// let Check
 for (const element of TextBoxCollection) {
-    if(element.)
+    if(element.textContent!='')
+        isDraw=true;
 }
 
 

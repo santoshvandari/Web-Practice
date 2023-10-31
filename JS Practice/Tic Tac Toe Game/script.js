@@ -36,6 +36,11 @@ const ChangePlayer=()=>{
 };
 
 //Implement Game Win Logic
+wincase.forEach(e=>{
+    if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent){
+        console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
+    }
+})
 
 
 

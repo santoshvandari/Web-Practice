@@ -37,7 +37,7 @@ main {
     left: 0;
     background: #4e26bb;
     /* transform: translate(0,10px) rotate(0); */
-    transition: transform 0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .box {
     display: flex;

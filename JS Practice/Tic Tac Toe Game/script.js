@@ -27,18 +27,20 @@ const ChangePlayer=()=>{
 };
 
 
-setInterval(function(){
-    ChangePlayer();
-    console.log(playerTurn)
-}
-,1000)
+// setInterval(function(){
+//     ChangePlayer();
+//     console.log(playerTurn)
+// }
+// ,1000)
 
 
 //Adding the Event Listener in the Box
 let BoxCollectiion = document.getElementsByClassName('box');
 Array.from(BoxCollectiion).forEach(element=>{
-    let boxtext=element.getElementsByClassName('boxtext')[0];
+    let boxtext=element.getElementsByClassName('text')[0];
     element.addEventListener('click',()=>{
         boxtext.textContent=playerTurn;
+        clicksound.play();
+        ChangePlayer();
     })
 })

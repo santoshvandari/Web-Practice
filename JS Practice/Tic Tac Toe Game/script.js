@@ -85,15 +85,17 @@ document.getElementById('reset').addEventListener('click',()=>{
             isDraw=false;
             lineEl.style.width=`0px`;
             musicplaying.pause();
-            musicplaying.currentTime=0;
+            document.querySelector("#music").textContent="Play Music";
         })
     }
 });
-
-document.getElementById('music').addEventListener('click',function(){
+//Music Play Pause Button
+document.getElementById('music').addEventListener('click',function(e){
     if(musicplaying.paused){
+        e.target.textContent='Paused Music'
         musicplaying.play();
     }else{
+        e.target.textContent='Play Music'
         musicplaying.pause();
     }
 })

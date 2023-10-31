@@ -32,3 +32,6 @@ setInterval(function(){
     console.log(playerTurn)
 }
 ,1000)
+
+
+//Adding the Event Listener in the Box

@@ -50,9 +50,11 @@ let GameWonLogic=()=>{
             lineEl.style.transform=`translate(${e[3]}px,${e[4]}px) rotate(${e[5]}deg)`;
             lineEl.style.width=`20vw`;
             GameStatus.textContent=`${TextBoxCollection[e[0]].textContent} Won the Game!!!`;
-            alert(`${TextBoxCollection[e[0]].textContent} Won the Game!!!`)
             document.getElementsByTagName('img')[0].style.width='200px';
             gameover.play();
+            setTimeout(() => {
+                alert(`${TextBoxCollection[e[0]].textContent} Won the Game!!!`)  
+            }, 1000);
         }
     })
 }

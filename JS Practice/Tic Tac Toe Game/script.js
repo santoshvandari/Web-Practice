@@ -25,12 +25,12 @@ let wincase=[
 //Changing Turn of Player
 const ChangePlayer=()=>{
     playerTurn=(playerTurn==='X'?'0':'X');
-    if(!isGameOver){
+    if(!isGameOver)
         GameStatus.textContent=`Turn For ${playerTurn}`;
-    }
     CheckDraw()
     if(isDraw){
         GameStatus.textContent=`Game Draw!!!`;
+        alert(`Game Draw!!!`)
     }
 };
 //checking the GameisDraw or Not
@@ -45,18 +45,14 @@ let GameWonLogic=()=>{
     wincase.forEach(e=>{
         if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent && TextBoxCollection[e[0]].textContent !=''){
             isGameOver=true;
-            // console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
             lineEl.style.transform=`translate(${e[3]}px,${e[4]}px) rotate(${e[5]}deg)`;
             lineEl.style.width=`20vw`;
             GameStatus.textContent=`${TextBoxCollection[e[0]].textContent} Won the Game!!!`;
             document.getElementsByTagName('img')[0].style.width='200px';
             gameover.play();
-
         }
     })
-    
 }
-
 //Adding the Event Listener in the Box
 Array.from(BoxCollectiion).forEach(element=>{
     element.addEventListener('click',()=>{
@@ -66,7 +62,7 @@ Array.from(BoxCollectiion).forEach(element=>{
             ChangePlayer();
             GameWonLogic();
         }else{
-            // alert("This Box is Already Filled")
+            alert("This Box is Already Filled")
         }
     })
 })

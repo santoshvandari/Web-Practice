@@ -8,9 +8,6 @@ let BoxCollectiion = document.getElementsByClassName('box');
 let TextBoxCollection = document.getElementsByClassName('text');
 let GameStatus= document.getElementsByClassName('gamestatus')[0];
 
-console.log(TextBoxCollection)
-
-
 //Music Varibles Declearation
 const musicplaying= new Audio('music.mp3');
 const gameover= new Audio('gameover.mp3');
@@ -38,7 +35,6 @@ const ChangePlayer=()=>{
 
 //Implement Game Win Logic
 let GameWonLogic=()=>{
-    
     wincase.forEach(e=>{
         if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent && TextBoxCollection[e[0]].textContent !=''){
             isGameOver==true;

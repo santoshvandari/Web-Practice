@@ -53,7 +53,7 @@ Array.from(BoxCollectiion).forEach(element=>{
             clicksound.play();
             ChangePlayer();
         }else{
-            console.log("This Box is Already Filled")
+            alert("This Box is Already Filled")
         }
     })
 })

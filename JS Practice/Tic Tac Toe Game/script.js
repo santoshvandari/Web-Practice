@@ -1,15 +1,12 @@
-console.log("hello WOrld")
 // Declearing All the Variables
 let isGameOver=false;
 let playerTurn='X';
 let isDraw=false;
-
 //Selecting the Elements
 let BoxCollectiion = document.getElementsByClassName('box');
 let TextBoxCollection = document.getElementsByClassName('text');
 let GameStatus= document.getElementsByClassName('gamestatus')[0];
 let lineEl=document.getElementsByClassName('line')[0];
-
 //Music Varibles Declearation
 const musicplaying= new Audio('music.mp3');
 const gameover= new Audio('gameover.mp3');
@@ -31,16 +28,17 @@ const ChangePlayer=()=>{
     if(!isGameOver){
         GameStatus.textContent=`Turn For ${playerTurn}`;
     }
+    CheckDraw()
     if(isDraw){
         GameStatus.textContent=`Game Draw!!!`;
     }
 };
-
 //checking the GameisDraw or Not
-// let Check
-for (const element of TextBoxCollection) {
-    if(element.textContent!='')
-        isDraw=true;
+let CheckDraw=()=>{
+    for (const element of TextBoxCollection) {
+        if(element.textContent!='')
+            isDraw=true;
+    }
 }
 
 
@@ -83,8 +81,7 @@ document.getElementById('reset').addEventListener('click',()=>{
         element.getElementsByClassName("text")[0].textContent="";
         document.getElementsByTagName('img')[0].style.width='0px';
         isGameOver=false;
+        isDraw=false;
         lineEl.style.width=`0px`;
-
-
     })
 });

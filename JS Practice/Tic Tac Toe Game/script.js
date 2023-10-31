@@ -35,3 +35,7 @@ setInterval(function(){
 
 
 //Adding the Event Listener in the Box
+let BoxCollectiion = document.getElementsByClassName('box');
+Array.from(BoxCollectiion).forEach(element=>{
+    
+})

@@ -5,9 +5,10 @@ let playerTurn='X';
 
 //Selecting the Elements
 let BoxCollectiion = document.getElementsByClassName('box');
-let TextBoxCollection = document.getElementById('text');
+let TextBoxCollection = document.getElementsByClassName('text');
 let GameStatus= document.getElementsByClassName('gamestatus')[0];
 
+console.log(TextBoxCollection)
 
 
 //Music Varibles Declearation
@@ -37,7 +38,7 @@ const ChangePlayer=()=>{
 
 //Implement Game Win Logic
 wincase.forEach(e=>{
-    if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent){
+    if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent && TextBoxCollection[e[0]].textContent !=''){
         console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
     }
 })

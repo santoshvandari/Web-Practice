@@ -38,7 +38,6 @@ let CheckDraw=()=>{
     for (const element of TextBoxCollection) 
         if(element.textContent!='')
             isDraw=true;
-    
 }
 //Implement Game Win Logic
 let GameWonLogic=()=>{
@@ -67,16 +66,15 @@ Array.from(BoxCollectiion).forEach(element=>{
         }
     })
 })
-
-
-
 //Adding the Event Listener in the Reset Button
 document.getElementById('reset').addEventListener('click',()=>{
-    Array.from(BoxCollectiion).forEach(element=>{
-        element.getElementsByClassName("text")[0].textContent="";
-        document.getElementsByTagName('img')[0].style.width='0px';
-        isGameOver=false;
-        isDraw=false;
-        lineEl.style.width=`0px`;
-    })
+    if(confirm("Are You Sure?")){
+        Array.from(BoxCollectiion).forEach(element=>{
+            element.getElementsByClassName("text")[0].textContent="";
+            document.getElementsByTagName('img')[0].style.width='0px';
+            isGameOver=false;
+            isDraw=false;
+            lineEl.style.width=`0px`;
+        })
+    }
 });

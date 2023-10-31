@@ -82,15 +82,16 @@ document.getElementById('reset').addEventListener('click',()=>{
             isGameOver=false;
             isDraw=false;
             lineEl.style.width=`0px`;
+            musicplaying.pause();
             musicplaying.currentTime=0;
         })
     }
 });
 
 document.getElementById('music').addEventListener('click',function(){
-    if(musicplaying.pause()){
+    if(musicplaying.paused){
         musicplaying.play();
     }else{
-        musicplaying.paused();
+        musicplaying.pause();
     }
 })

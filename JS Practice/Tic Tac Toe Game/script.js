@@ -39,13 +39,12 @@ let BoxCollectiion = document.getElementsByClassName('box');
 Array.from(BoxCollectiion).forEach(element=>{
     let boxtext=element.getElementsByClassName('text')[0];
     element.addEventListener('click',()=>{
-        if(element.ariaDisabled==false){
-            element.ariaDisabled=true;
+        if(element.textContent==""){
             boxtext.textContent=playerTurn;
             clicksound.play();
             ChangePlayer();
         }else{
-            alert("This Box is Already Filled")
+            console.log("This Box is Already Filled")
         }
     })
 })

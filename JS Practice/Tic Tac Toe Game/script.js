@@ -38,5 +38,7 @@ setInterval(function(){
 let BoxCollectiion = document.getElementsByClassName('box');
 Array.from(BoxCollectiion).forEach(element=>{
     let boxtext=element.getElementsByClassName('boxtext')[0];
-    element.addEventListener
+    element.addEventListener('click',()=>{
+        boxtext.textContent=playerTurn;
+    })
 })

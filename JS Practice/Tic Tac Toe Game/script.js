@@ -14,8 +14,8 @@ const gameover= new Audio('gameover.mp3');
 const clicksound= new Audio('ting.mp3');
 //Wining Combination
 let wincase=[
-    [0,1,2],
-    [3,4,5],
+    [0,1,2,90,90,0],
+    [3,4,5,90,285,0],
     [6,7,8],
     [0,3,6],
     [1,4,7],
@@ -37,7 +37,7 @@ const ChangePlayer=()=>{
 let GameWonLogic=()=>{
     wincase.forEach(e=>{
         if(TextBoxCollection[e[0]].textContent==TextBoxCollection[e[1]].textContent && TextBoxCollection[e[1]].textContent == TextBoxCollection[e[2]].textContent && TextBoxCollection[e[0]].textContent !=''){
-            isGameOver==true;
+            isGameOver=true;
             // console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
             GameStatus.textContent=`${TextBoxCollection[e[0]].textContent} Won the Game!!!`;
             document.getElementsByTagName('img')[0].style.width='200px';
@@ -47,8 +47,6 @@ let GameWonLogic=()=>{
     })
     
 }
-
-
 
 //Adding the Event Listener in the Box
 Array.from(BoxCollectiion).forEach(element=>{
@@ -71,6 +69,7 @@ document.getElementById('reset').addEventListener('click',()=>{
     Array.from(BoxCollectiion).forEach(element=>{
         element.getElementsByClassName("text")[0].textContent="";
         document.getElementsByTagName('img')[0].style.width='0px';
+        isGameOver=false;
 
     })
 });

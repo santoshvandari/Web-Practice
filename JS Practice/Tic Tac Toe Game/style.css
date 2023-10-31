@@ -27,8 +27,17 @@ main {
     /* background: red; */
     display: grid;
     grid-template: repeat(3, 10vw) / repeat(3, 10vw);
+    position: relative;
 }
-
+.line{
+    position: absolute;
+    width: 20vw;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #000;
+    transform: translate(0,10px) rotate(0);
+}
 .box {
     display: flex;
     justify-content: center;

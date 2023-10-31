@@ -31,8 +31,8 @@ main {
 }
 .line{
     position: absolute;
-    width: 20vw;
-    height: 2px;
+    width: 0vw;
+    height: 3px;
     top: 0;
     left: 0;
     background: #4e26bb;

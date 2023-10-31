@@ -41,6 +41,7 @@ let GameWonLogic=()=>{
             isGameOver=true;
             // console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
             lineEl.style.transform=`translate(${e[3]}px,${e[4]}px) rotate(${e[5]}deg)`;
+            lineEl.style.width=`20vw`;
             GameStatus.textContent=`${TextBoxCollection[e[0]].textContent} Won the Game!!!`;
             document.getElementsByTagName('img')[0].style.width='200px';
             gameover.play();
@@ -72,7 +73,7 @@ document.getElementById('reset').addEventListener('click',()=>{
         element.getElementsByClassName("text")[0].textContent="";
         document.getElementsByTagName('img')[0].style.width='0px';
         isGameOver=false;
-        lineEl.style.transform=`translate(0px,0px) rotate(0deg)`;
+        lineEl.style.width=`0px`;
 
 
     })

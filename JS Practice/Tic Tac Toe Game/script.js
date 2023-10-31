@@ -72,6 +72,8 @@ document.getElementById('reset').addEventListener('click',()=>{
         element.getElementsByClassName("text")[0].textContent="";
         document.getElementsByTagName('img')[0].style.width='0px';
         isGameOver=false;
+        lineEl.style.transform=`translate(0px,0px) rotate(0deg)`;
+
 
     })
 });

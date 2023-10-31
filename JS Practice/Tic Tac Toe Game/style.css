@@ -36,7 +36,7 @@ main {
     top: 0;
     left: 0;
     background: #000;
-    transform: translate(0,10px) rotate(0);
+    /* transform: translate(0,10px) rotate(0); */
     transition: transform 1s ease-in-out;
 }
 .box {

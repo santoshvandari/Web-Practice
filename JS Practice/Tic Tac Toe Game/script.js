@@ -36,6 +36,13 @@ const ChangePlayer=()=>{
     }
 };
 
+//checking the GameisDraw or Not
+let Check
+for (const element of TextBoxCollection) {
+    if(element.)
+}
+
+
 //Implement Game Win Logic
 let GameWonLogic=()=>{
     wincase.forEach(e=>{
@@ -56,7 +63,7 @@ let GameWonLogic=()=>{
 //Adding the Event Listener in the Box
 Array.from(BoxCollectiion).forEach(element=>{
     element.addEventListener('click',()=>{
-        if(element.textContent=="" && isGameOver===false){
+        if(element.textContent=="" && isGameOver===false && isDraw==false){
             element.getElementsByClassName('text')[0].innerHTML=playerTurn;
             clicksound.play();
             ChangePlayer();

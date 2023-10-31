@@ -32,6 +32,9 @@ const ChangePlayer=()=>{
     if(!isGameOver){
         GameStatus.textContent=`Turn For ${playerTurn}`;
     }
+    if(isDraw){
+        GameStatus.textContent=`Game Draw!!!`;
+    }
 };
 
 //Implement Game Win Logic

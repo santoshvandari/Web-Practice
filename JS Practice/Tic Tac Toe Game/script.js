@@ -2,12 +2,13 @@ console.log("hello WOrld")
 // Declearing All the Variables
 let isGameOver=false;
 let playerTurn='X';
+let isDraw=false;
 
 //Selecting the Elements
 let BoxCollectiion = document.getElementsByClassName('box');
 let TextBoxCollection = document.getElementsByClassName('text');
 let GameStatus= document.getElementsByClassName('gamestatus')[0];
-let lineEl=document.getElementsByClassName('line')[0]
+let lineEl=document.getElementsByClassName('line')[0];
 
 //Music Varibles Declearation
 const musicplaying= new Audio('music.mp3');
@@ -24,8 +25,6 @@ let wincase=[
     [0,4,8,94,285,45],
     [2,4,6,94,285,135]
 ]
-
-
 //Changing Turn of Player
 const ChangePlayer=()=>{
     playerTurn=(playerTurn==='X'?'0':'X');

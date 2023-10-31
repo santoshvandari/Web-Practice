@@ -44,6 +44,8 @@ let GameWonLogic=()=>{
             isGameOver==true;
             // console.log(TextBoxCollection[e[0]].textContent+' Won Game!!!')
             GameStatus.textContent=`${playerTurn} Won the Game!!!`;
+            document.getElementsByTagName('img')[0].style.width='200px';
+            gameover.play();
 
         }
     })
@@ -72,5 +74,7 @@ Array.from(BoxCollectiion).forEach(element=>{
 document.getElementById('reset').addEventListener('click',()=>{
     Array.from(BoxCollectiion).forEach(element=>{
         element.getElementsByClassName("text")[0].textContent="";
+        document.getElementsByTagName('img')[0].style.width='0px';
+
     })
 });

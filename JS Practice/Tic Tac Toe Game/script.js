@@ -49,13 +49,8 @@ const ChangePlayer=()=>{
 Array.from(BoxCollectiion).forEach(element=>{
     element.addEventListener('click',()=>{
         if(element.textContent=="" && isGameOver===false){
-            console.log(element.innerHTML)
-            console.log(element.getElementsByClassName('text'))
-            console.log("This Box is Empty")
-            // boxtext.textContent=playerTurn;
             element.getElementsByClassName('text')[0].innerHTML=playerTurn;
-
-            // clicksound.play();
+            clicksound.play();
             ChangePlayer();
         }else{
             console.log("This Box is Already Filled")
